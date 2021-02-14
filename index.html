@@ -1,0 +1,2080 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+
+    <meta name="generator" content="sphinx-3.5.0, furo 2020.12.30.beta24"/>
+        <title>Home - mayafbx</title>
+      <link rel="stylesheet" href="_static/styles/furo.css?digest=33d2fc4f3f180ec1ffc6524e273e21d7d58cbe49">
+    <link rel="stylesheet" href="_static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
+    
+
+
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link rel="stylesheet" href="_static/styles/furo-extensions.css?digest=26485485040e7aaf717c13fd0188a5ad2c2deb60">
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script defer="defer" src="_static/jquery.js"></script>
+    <script defer="defer" src="_static/underscore.js"></script>
+    <script defer="defer" src="_static/doctools.js"></script>
+    <script defer src="_static/scripts/main.js?digest=e931d09b2a40c1bb82b542effe772014573baf67"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="#"><div class="brand">mayafbx</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+  
+  
+  <span class="sidebar-brand-text">mayafbx</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html">
+  <input class="sidebar-search" placeholder=Search name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-scroll"><div class="sidebar-tree">
+  
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="mayafbx">
+<h1>mayafbx<a class="headerlink" href="#mayafbx" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/tahv/mayafbx">Github</a></p>
+<span class="target" id="module-mayafbx"></span><p>Python wrapper for the FBX plugin of Maya.</p>
+<p>FBX options as objects for importing and exporting FBX files.</p>
+<dl>
+<dt>Usage:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tempfile</span><span class="o">,</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">maya</span> <span class="kn">import</span> <span class="n">cmds</span>
+<span class="kn">from</span> <span class="nn">mayafbx</span> <span class="kn">import</span> <span class="n">FbxExportOptions</span><span class="p">,</span> <span class="n">export_fbx</span>
+<span class="kn">from</span> <span class="nn">mayafbx</span> <span class="kn">import</span> <span class="n">FbxImportOptions</span><span class="p">,</span> <span class="n">import_fbx</span><span class="p">,</span> <span class="n">MergeMode</span>
+
+<span class="n">cmds</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="n">new</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Create a cube with 2 keyframes.</span>
+<span class="n">cube</span> <span class="o">=</span> <span class="n">cmds</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">cmds</span><span class="o">.</span><span class="n">setKeyframe</span><span class="p">(</span><span class="n">cube</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="s2">"translateX"</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">cmds</span><span class="o">.</span><span class="n">setKeyframe</span><span class="p">(</span><span class="n">cube</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="s2">"translateX"</span><span class="p">,</span> <span class="n">time</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Setup options to export the scene with baked animation.</span>
+<span class="n">options</span> <span class="o">=</span> <span class="n">FbxExportOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">animation</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">options</span><span class="o">.</span><span class="n">bake_animation</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">options</span><span class="o">.</span><span class="n">bake_resample_all</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Export the scene as FBX.</span>
+<span class="n">filepath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tempfile</span><span class="o">.</span><span class="n">gettempdir</span><span class="p">(),</span> <span class="s2">"testcube.fbx"</span><span class="p">)</span>
+<span class="n">export_fbx</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span>
+
+<span class="c1"># Remove all keys from our cube.</span>
+<span class="n">cmds</span><span class="o">.</span><span class="n">cutKey</span><span class="p">(</span><span class="n">cube</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="s2">"translateX"</span><span class="p">,</span> <span class="n">option</span><span class="o">=</span><span class="s2">"keys"</span><span class="p">)</span>
+
+<span class="c1"># Setup options to import our animation back on our cube.</span>
+<span class="n">options</span> <span class="o">=</span> <span class="n">FbxImportOptions</span><span class="p">()</span>
+<span class="n">options</span><span class="o">.</span><span class="n">merge_mode</span> <span class="o">=</span> <span class="n">MergeMode</span><span class="o">.</span><span class="n">kMerge</span>
+<span class="n">options</span><span class="o">.</span><span class="n">animation</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Import our FBX.</span>
+<span class="n">import_fbx</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="simple">
+<dt>Maya Documentation:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/Maya-DataExchange/files/GUID-699CDF74-3D64-44B0-967E-7427DF800290-htm.html">FBX Import MEL commands</a></p></li>
+<li><p><a class="reference external" href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/Maya-DataExchange/files/GUID-0CD41066-4C27-48AE-9776-366DB11B4FDF-htm.html">FBX Import options</a></p></li>
+<li><p><a class="reference external" href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/Maya-DataExchange/files/GUID-6CCE943A-2ED4-4CEE-96D4-9CB19C28F4E0-htm.html">FBX Export MEL commands</a></p></li>
+<li><p><a class="reference external" href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/Maya-DataExchange/files/GUID-FE8DBEAA-C2DD-43B3-9933-4BA4CDDEAA89-htm.html">FBX Export options</a></p></li>
+<li><p><a class="reference external" href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/Maya-DataExchange/files/GUID-AA3B8EA4-DDFB-4B0F-9654-2BF6B8781AE7-htm.html">FBX Limitations</a></p></li>
+<li><p><a class="reference external" href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2020/ENU/Maya-DataExchange/files/GUID-0B2C4423-D37D-4BFC-BC17-DD871FB2AD9A-htm.html">FBX Troubleshooting</a></p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="content">
+<h1>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h1>
+<p>Export</p>
+<div class="table-wrapper"><table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 90%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.FbxExportOptions" title="mayafbx.FbxExportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.FbxExportOptions</span></code></a></p></td>
+<td><p>Wrapper of <code class="docutils literal notranslate"><span class="pre">"FBXProperty</span> <span class="pre">Export|..."</span></code> and <code class="docutils literal notranslate"><span class="pre">"FBXExport..."</span></code> mel commands.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mayafbx.export_fbx" title="mayafbx.export_fbx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.export_fbx</span></code></a></p></td>
+<td><p>Export to specified <code class="docutils literal notranslate"><span class="pre">filename</span></code> using <code class="docutils literal notranslate"><span class="pre">options</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.restore_export_preset" title="mayafbx.restore_export_preset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.restore_export_preset</span></code></a></p></td>
+<td><p>Restores the default values of the FBX Exporter by loading the “Autodesk Media &amp; Entertainment” export preset.</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>Import</p>
+<div class="table-wrapper"><table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 90%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.FbxImportOptions" title="mayafbx.FbxImportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.FbxImportOptions</span></code></a></p></td>
+<td><p>Wrapper of <code class="docutils literal notranslate"><span class="pre">"FBXProperty</span> <span class="pre">Import|..."</span></code> and <code class="docutils literal notranslate"><span class="pre">"FBXImport..."</span></code> mel commands.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mayafbx.import_fbx" title="mayafbx.import_fbx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.import_fbx</span></code></a></p></td>
+<td><p>Import to specified <code class="docutils literal notranslate"><span class="pre">filename</span></code> using <code class="docutils literal notranslate"><span class="pre">options</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.restore_import_preset" title="mayafbx.restore_import_preset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.restore_import_preset</span></code></a></p></td>
+<td><p>Restores the default values of the FBX Importer by loading the “Autodesk Media &amp; Entertainment” import preset.</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>Enums</p>
+<div class="table-wrapper"><table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 90%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.QuaternionInterpolation" title="mayafbx.QuaternionInterpolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.QuaternionInterpolation</span></code></a></p></td>
+<td><p>How to handle quaternion interpolation on import/export.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mayafbx.ConvertUnit" title="mayafbx.ConvertUnit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.ConvertUnit</span></code></a></p></td>
+<td><p>Supported units, change the scale factor on import/export.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.UpAxis" title="mayafbx.UpAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.UpAxis</span></code></a></p></td>
+<td><p>Supported up axis conversions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mayafbx.ForcedFileAxis" title="mayafbx.ForcedFileAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.ForcedFileAxis</span></code></a></p></td>
+<td><p>Supported policies for incoming file axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.AxisConversionMethod" title="mayafbx.AxisConversionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.AxisConversionMethod</span></code></a></p></td>
+<td><p>Supported axis conversions methods.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mayafbx.NurbsSurfaceAs" title="mayafbx.NurbsSurfaceAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.NurbsSurfaceAs</span></code></a></p></td>
+<td><p>Supported nurbs surfaces conversions on export.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.FileFormat" title="mayafbx.FileFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.FileFormat</span></code></a></p></td>
+<td><p>Supported export file formats.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mayafbx.FileVersion" title="mayafbx.FileVersion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.FileVersion</span></code></a></p></td>
+<td><p>Supported file version.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.SkeletonDefinition" title="mayafbx.SkeletonDefinition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.SkeletonDefinition</span></code></a></p></td>
+<td><p>Skeleton definition that can be used on import.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mayafbx.MergeMode" title="mayafbx.MergeMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.MergeMode</span></code></a></p></td>
+<td><p>How to process imported data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mayafbx.SamplingRate" title="mayafbx.SamplingRate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mayafbx.SamplingRate</span></code></a></p></td>
+<td><p>Sampling rate sources.</p></td>
+</tr>
+</tbody>
+</table></div>
+<div class="line-block">
+<div class="line"><br/></div>
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="export">
+<h1>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="mayafbx.export_fbx">
+<code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">export_fbx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.export_fbx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export to specified <code class="docutils literal notranslate"><span class="pre">filename</span></code> using <code class="docutils literal notranslate"><span class="pre">options</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – </p></li>
+<li><p><strong>options</strong> (<a class="reference internal" href="#mayafbx.FbxExportOptions" title="mayafbx.FbxExportOptions"><em>FbxExportOptions</em></a>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="mayafbx.restore_export_preset">
+<code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">restore_export_preset</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.restore_export_preset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restores the default values of the FBX Exporter by loading the “Autodesk
+Media &amp; Entertainment” export preset.</p>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<div class="section" id="export-options">
+<h2>Export Options<a class="headerlink" href="#export-options" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="mayafbx.FbxExportOptions">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">FbxExportOptions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.FbxExportOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper of <code class="docutils literal notranslate"><span class="pre">"FBXProperty</span> <span class="pre">Export|..."</span></code> and <code class="docutils literal notranslate"><span class="pre">"FBXExport..."</span></code> mel
+commands.</p>
+<p>Options can be get and set as properties or items:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="n">FbxExportOptions</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">smoothing_groups</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="p">[</span><span class="s1">'smoothing_groups'</span><span class="p">]</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="p">[</span><span class="s2">"smoothing_groups"</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">smoothing_groups</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>Can be initialized with kwargs:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="n">FbxExportOptions</span><span class="p">(</span><span class="n">smoothing_groups</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">smoothing_groups</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="n">FbxExportOptions</span><span class="p">(</span><span class="n">smoothing_groups</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">smoothing_groups</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Can be used as a context manager:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">FbxExportOptions</span><span class="p">(</span><span class="n">smoothing_groups</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">FbxExportOptions</span><span class="o">.</span><span class="n">from_scene</span><span class="p">()</span><span class="o">.</span><span class="n">smoothing_groups</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">FbxExportOptions</span><span class="p">(</span><span class="n">smoothing_groups</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">options</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">FbxExportOptions</span><span class="o">.</span><span class="n">from_scene</span><span class="p">()</span><span class="o">.</span><span class="n">smoothing_groups</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">FbxExportOptions</span><span class="o">.</span><span class="n">from_scene</span><span class="p">()</span><span class="o">.</span><span class="n">smoothing_groups</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py method">
+<dt id="mayafbx.FbxExportOptions.from_scene">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">from_scene</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.FbxExportOptions.from_scene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new instance initialized from scene options.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="mayafbx.FbxExportOptions.apply">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">apply</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.FbxExportOptions.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply options in this instance to the scene.</p>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<div class="section" id="geometry">
+<h3>Geometry<a class="headerlink" href="#geometry" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.smoothing_groups">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">smoothing_groups</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.smoothing_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts edge information to Smoothing Groups.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.hard_edges">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">hard_edges</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.hard_edges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split geometry vertex normals based on edge continuity.</p>
+<p>Vertex normals determine the visual smoothing between polygon faces.
+They reflect how Maya renders the polygons in smooth shaded mode.</p>
+<p>Default to <em>False</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This operation duplicates vertex information and converts the geometry.
+Use is to keep the same hard/soft edge look that you get from Maya in
+MotionBuilder.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.tangents">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">tangents</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.tangents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create tangents and binormals data from the UV and Normal
+information of meshes.</p>
+<p>Default to <em>False</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Your geometry must have UV information.</p></li>
+<li><p>Only works on meshes that have only triangle polygons, so you may need
+to <a class="reference internal" href="#mayafbx.FbxExportOptions.triangulate" title="mayafbx.FbxExportOptions.triangulate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">triangulate</span></code></a> the mesh.</p></li>
+</ul>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.smooth_mesh">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">smooth_mesh</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.smooth_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export source mesh with Smooth Mesh attributes.</p>
+<ul class="simple">
+<li><p>If <em>True</em>, the mesh is <strong>not tessellated</strong>, and the source is exported
+<strong>with</strong> Smooth Mesh data.</p></li>
+<li><p>If <em>False</em>, the mesh is <strong>tessellated</strong> and exported <strong>without</strong> Smooth
+Mesh data.</p></li>
+</ul>
+<p>Default to <em>True</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to export the source mesh as is without data, disable the
+Smooth Mesh Preview in Maya before export.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.selection_set">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">selection_set</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.selection_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Include Selection Sets.</p>
+<p>Default to <em>False</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Can increase the file size.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.blind_data">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">blind_data</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.blind_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export Blind Data stored on polygons.</p>
+<p>Blind data is information stored with polygons which is not used by Maya,
+but might be useful to the platform to which you export to.</p>
+<p>For example, when you use Maya to create content for interactive game levels
+you can use blind data to specify which faces of the level are “solid” or
+“permeable” to the character, or which faces on a polygon mesh are lava and
+hurt the character, and so on.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.convert_to_null">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">convert_to_null</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.convert_to_null" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert all geometry into locators (dummy objects).</p>
+<p>Creates a smaller file size, often used for animation only files.</p>
+<p>Default to <em>False</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>If you import the same file into the original scene, the plug-in only
+imports animation onto the original geometries, and does not add
+incoming Nulls to the existing scene.</p></li>
+<li><p>If you import the same file into a new scene, the plug-in imports
+the Nulls with the animation applied.</p></li>
+</ul>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.preserve_instances">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">preserve_instances</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.preserve_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preserve Maya instances in the FBX export or converted them to
+objects.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.triangulate">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">triangulate</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.triangulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tessellates exported polygon geometry.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.convert_nurbs_surface_as">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">convert_nurbs_surface_as</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.convert_nurbs_surface_as" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert NURBS geometry into a mesh during the export process.</p>
+<p>Use this option if you are exporting to a software that does not support
+NURBS.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.NurbsSurfaceAs.kNurbs" title="mayafbx.NurbsSurfaceAs.kNurbs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NurbsSurfaceAs.kNurbs</span></code></a>.
+See <a class="reference internal" href="#mayafbx.NurbsSurfaceAs" title="mayafbx.NurbsSurfaceAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NurbsSurfaceAs</span></code></a> for the list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="animation">
+<h3>Animation<a class="headerlink" href="#animation" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.animation">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">animation</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.animation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export animation.</p>
+<p>Default to <em>True</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If set to <em>False</em>, the exporter won’t evaluate any of the
+animation-related options (bake, curve_filter, skin, shapes…)</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.use_scene_name">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">use_scene_name</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.use_scene_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the animation using the scene name as take name.</p>
+<p>If <em>False</em>, the plug-in saves Maya scene animation as <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">001</span></code>.</p>
+<p>Default to <em>False</em>. Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.animation" title="mayafbx.FbxExportOptions.animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">animation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.remove_single_key">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">remove_single_key</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.remove_single_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove keys from animation curves that have only one key.</p>
+<p>You can reduce the file size by discarding animation curves that only have a
+single key.</p>
+<p>Default to <em>False</em>. Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.animation" title="mayafbx.FbxExportOptions.animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">animation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.quaternion_interpolation">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">quaternion_interpolation</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.quaternion_interpolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>How to export quaternion interpolations from the host application.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.QuaternionInterpolation.kResampleAsEuler" title="mayafbx.QuaternionInterpolation.kResampleAsEuler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuaternionInterpolation.kResampleAsEuler</span></code></a>.
+See <a class="reference internal" href="#mayafbx.QuaternionInterpolation" title="mayafbx.QuaternionInterpolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuaternionInterpolation</span></code></a> for a list of possible values.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.animation" title="mayafbx.FbxExportOptions.animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">animation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.bake_animation">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">bake_animation</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.bake_animation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bake (plot) animation.</p>
+<p>Default to <em>False</em>. Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.animation" title="mayafbx.FbxExportOptions.animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">animation</span></code></a> is <em>True</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option alone won’t bake supported animated elements, for a full
+bake you must also set <a class="reference internal" href="#mayafbx.FbxExportOptions.bake_resample_all" title="mayafbx.FbxExportOptions.bake_resample_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bake_resample_all</span></code></a> to True.</p>
+<p>See <a class="reference internal" href="#mayafbx.FbxExportOptions.constraints" title="mayafbx.FbxExportOptions.constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></a> for a list of supported constraints elements.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.bake_resample_all">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">bake_resample_all</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.bake_resample_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bake even the supported animated elements.</p>
+<p>Default to <em>False</em>. Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.bake_animation" title="mayafbx.FbxExportOptions.bake_animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bake_animation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.bake_animation_start">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">bake_animation_start</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.bake_animation_start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bake start frame.</p>
+<p>Default to the <em>Animation Start Time</em> (as set in the Ranger Slider UI) when
+instanciated.</p>
+<p>Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.bake_animation" title="mayafbx.FbxExportOptions.bake_animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bake_animation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.bake_animation_end">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">bake_animation_end</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.bake_animation_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bake end frame.</p>
+<p>Default to the <em>Animation End Time</em> (as set in the Ranger Slider UI) when
+instanciated.</p>
+<p>Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.bake_animation" title="mayafbx.FbxExportOptions.bake_animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bake_animation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.bake_animation_step">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">bake_animation_step</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.bake_animation_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bake step frames.</p>
+<p>Setting a Step value of 2 for example, only bakes and exports a key every
+other frame.</p>
+<p>Default to <em>1</em>.     Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.bake_animation" title="mayafbx.FbxExportOptions.bake_animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bake_animation</span></code></a> is <strong>True</strong>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.deformation">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">deformation</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.deformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export Skin and Blend Shape deformations.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.deformation_shapes">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">deformation_shapes</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.deformation_shapes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export Blend Shapes.</p>
+<p>Default to True.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.deformation" title="mayafbx.FbxExportOptions.deformation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.deformation_skins">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">deformation_skins</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.deformation_skins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export Skinning.</p>
+<p>Default to <em>True</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.deformation" title="mayafbx.FbxExportOptions.deformation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.curve_filter">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">curve_filter</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.curve_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply filters to animation curves during the export process.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.curve_filter_constant_key_reducer">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">curve_filter_constant_key_reducer</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.curve_filter_constant_key_reducer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove redundant keys.</p>
+<p>Redundant keys are keys that have the same value, which are equivalent to
+flat horizontal interpolations on a curve.</p>
+<p>Default to <em>False</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.curve_filter" title="mayafbx.FbxExportOptions.curve_filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curve_filter</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.curve_filter_precision_translation">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">curve_filter_precision_translation</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.curve_filter_precision_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Threshold for translation curves in generic units.</p>
+<p>Default to <em>0.0001</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.curve_filter_constant_key_reducer" title="mayafbx.FbxExportOptions.curve_filter_constant_key_reducer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curve_filter_constant_key_reducer</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.curve_filter_precision_rotation">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">curve_filter_precision_rotation</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.curve_filter_precision_rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Threshold for rotation curves in generic units.</p>
+<p>Default to <em>0.009</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.curve_filter_constant_key_reducer" title="mayafbx.FbxExportOptions.curve_filter_constant_key_reducer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curve_filter_constant_key_reducer</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.curve_filter_precision_scale">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">curve_filter_precision_scale</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.curve_filter_precision_scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Threshold for scaling curves in generic units.</p>
+<p>Default to <em>0.004</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.curve_filter_constant_key_reducer" title="mayafbx.FbxExportOptions.curve_filter_constant_key_reducer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curve_filter_constant_key_reducer</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.curve_filter_precision_other">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">curve_filter_precision_other</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.curve_filter_precision_other" title="Permalink to this definition">¶</a></dt>
+<dd><p>Threshold for other curves in generic units.</p>
+<p>Default to <em>0.009</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.curve_filter_constant_key_reducer" title="mayafbx.FbxExportOptions.curve_filter_constant_key_reducer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curve_filter_constant_key_reducer</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.curve_filter_auto_tangents_only">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">curve_filter_auto_tangents_only</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.curve_filter_auto_tangents_only" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter only “Auto” key type.</p>
+<p>Default to <em>True</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.curve_filter_constant_key_reducer" title="mayafbx.FbxExportOptions.curve_filter_constant_key_reducer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curve_filter_constant_key_reducer</span></code></a> is <em>True</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Maya FBX plug-in converts all animation keys to User, which is not
+an Auto tangent. To ensure that constant key reducing occurs, set this
+to <em>False</em>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="include">
+<h3>Include<a class="headerlink" href="#include" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.constraints">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">constraints</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.constraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export supported constraints.</p>
+<dl class="simple">
+<dt>FBX support the following constraints:</dt><dd><ul class="simple">
+<li><p>Point</p></li>
+<li><p>Aim</p></li>
+<li><p>Orient</p></li>
+<li><p>Parent,</p></li>
+<li><p>IK handle (including Pole vector)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Activate this option if you intend to import the FBX to a software that
+support them, like MotionBuilder. Otherwise, see <a class="reference internal" href="#mayafbx.FbxExportOptions.bake_animation" title="mayafbx.FbxExportOptions.bake_animation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bake_animation</span></code></a> and
+<a class="reference internal" href="#mayafbx.FbxExportOptions.bake_resample_all" title="mayafbx.FbxExportOptions.bake_resample_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bake_resample_all</span></code></a>.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.skeleton_definition">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">skeleton_definition</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.skeleton_definition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Include Skeleton definition (FBIK/HIK).</p>
+<p>Useful if you are transferring to MotionBuilder, which support Characters.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.cameras">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">cameras</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.cameras" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export cameras.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.lights">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">lights</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.lights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export lights.</p>
+<dl class="simple">
+<dt>FBX support the following lights:</dt><dd><ul class="simple">
+<li><p>Point</p></li>
+<li><p>Spot</p></li>
+<li><p>Directional</p></li>
+</ul>
+</dd>
+</dl>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.audio">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">audio</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export audio.</p>
+<p>The data itself are the Audio clips and tracks found in the Time Editor.
+Only the active composition is processed during export.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.embed_media">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">embed_media</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.embed_media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Include (embed) media (textures, for example) associated with your
+scene within the FBX file.</p>
+<p>Media are then extracted to an <code class="docutils literal notranslate"><span class="pre">&lt;fileName&gt;.fbm</span></code> folder at import, in the
+same location as the FBX file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you do not have write permission to create that new folder, the media
+files are imported to the user’s temp folder, such as
+<code class="docutils literal notranslate"><span class="pre">C:\Documents</span> <span class="pre">and</span> <span class="pre">Settings\&lt;username&gt;\Local</span> <span class="pre">Settings\Temp</span></code>.</p>
+</div>
+<p>Use this option to ensure that all your textures are carried over and loaded
+when you open the FBX file on another computer.</p>
+<p>If disabled, the Maya FBX plug-in stores the relative and absolute paths of
+the associated media files at export time.</p>
+<p>Default to <em>False</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since the media are contained within the FBX file itself, this has an
+impact on file size.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.bind_pose">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">bind_pose</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.bind_pose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export bind poses.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="selection">
+<h3>Selection<a class="headerlink" href="#selection" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.selected">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">selected</span></code><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#mayafbx.FbxExportOptions.selected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export only selected elements.</p>
+<p>If <em>False</em>, export the whole scene.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.selected_hierarchy">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">selected_hierarchy</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.selected_hierarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Include the hierarchy below the selected object(s).</p>
+<p>Default to <em>True</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.selected" title="mayafbx.FbxExportOptions.selected"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selected</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.selected_input_connections">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">selected_input_connections</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.selected_input_connections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Include all related input connections when exporting selection.</p>
+<p>Default to <em>True</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.selected" title="mayafbx.FbxExportOptions.selected"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selected</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="advanced">
+<h3>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.automatic_units">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">automatic_units</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.automatic_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>Automatically identify and set the units of the exported file to
+match the units of the scene.</p>
+<p>If <em>True</em>, the plug-in applies no unit conversion (scale factor of 1.0).</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.convert_units_to">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">convert_units_to</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.convert_units_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the units to which you want to convert your exported scene.</p>
+<p>Affects the Scale Factor value applied to the exported data.</p>
+<p>Default to the Maya System Units, as set in
+<code class="docutils literal notranslate"><span class="pre">Window</span> <span class="pre">&gt;</span> <span class="pre">Settings/Preferences</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Settings</span></code>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxExportOptions.automatic_units" title="mayafbx.FbxExportOptions.automatic_units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">automatic_units</span></code></a> is <em>False</em>.</p>
+<p>See <a class="reference internal" href="#mayafbx.ConvertUnit" title="mayafbx.ConvertUnit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvertUnit</span></code></a> for the list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.up_axis">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">up_axis</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.up_axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Up axis conversion.</p>
+<p>Useful if the destination application cannot do the conversion.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.UpAxis.kY" title="mayafbx.UpAxis.kY"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpAxis.kY</span></code></a>.
+Default to the the scene up axis, as set in
+<code class="docutils literal notranslate"><span class="pre">Window</span> <span class="pre">&gt;</span> <span class="pre">Settings/Preferences</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Settings</span></code>.
+See <a class="reference internal" href="#mayafbx.UpAxis" title="mayafbx.UpAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpAxis</span></code></a> for the list of possible values.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Only applies axis conversion to the root elements of the scene.</p></li>
+<li><p>If you have animation on a root object that must be converted on
+export, these animation curves are resampled to apply the proper axis
+conversion.</p></li>
+<li><p>To avoid resampling these animation curves, make sure to add a Root
+Node (dummy object) as a parent of the animated object in your scene,
+before you export to FBX.</p></li>
+</ul>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.axis_conversion_method">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">axis_conversion_method</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.axis_conversion_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an export conversion method.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.AxisConversionMethod.kConvertAnimation" title="mayafbx.AxisConversionMethod.kConvertAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AxisConversionMethod.kConvertAnimation</span></code></a>.</p>
+<p>See <a class="reference internal" href="#mayafbx.AxisConversionMethod" title="mayafbx.AxisConversionMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AxisConversionMethod</span></code></a> for a list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.show_warning_ui">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">show_warning_ui</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.show_warning_ui" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the Warning Manager dialog if something unexpected occurs
+during the export.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.generate_log">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">generate_log</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.generate_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate log data.</p>
+<p>The Maya FBX plug-in stores log files with the FBX presets, in
+<code class="docutils literal notranslate"><span class="pre">C:\My</span> <span class="pre">Documents\Maya\FBX\Logs</span></code>.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.file_format">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">file_format</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.file_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save file in Binary or ASCII.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.FileFormat.kBinary" title="mayafbx.FileFormat.kBinary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FileFormat.kBinary</span></code></a>.
+See <a class="reference internal" href="#mayafbx.FileFormat" title="mayafbx.FileFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FileFormat</span></code></a> for a list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxExportOptions.file_version">
+<code class="sig-prename descclassname"><span class="pre">FbxExportOptions.</span></code><code class="sig-name descname"><span class="pre">file_version</span></code><a class="headerlink" href="#mayafbx.FbxExportOptions.file_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify an FBX version to use for export.</p>
+<p>Change this option when you want to import your file using an older plug-in
+version, where the source and destination plug-in versions do not match.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils"/>
+<div class="section" id="import">
+<h1>Import<a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="mayafbx.import_fbx">
+<code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">import_fbx</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.import_fbx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import to specified <code class="docutils literal notranslate"><span class="pre">filename</span></code> using <code class="docutils literal notranslate"><span class="pre">options</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – </p></li>
+<li><p><strong>options</strong> (<a class="reference internal" href="#mayafbx.FbxImportOptions" title="mayafbx.FbxImportOptions"><em>FbxImportOptions</em></a>) – </p></li>
+<li><p><strong>take</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/2.7/library/constants.html#None" title="(in Python v2.7)"><em>None</em></a>) – Specify the take you want to import (if you import
+animation).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="mayafbx.restore_import_preset">
+<code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">restore_import_preset</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.restore_import_preset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restores the default values of the FBX Importer by loading the “Autodesk
+Media &amp; Entertainment” import preset.</p>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<div class="section" id="import-options">
+<h2>Import Options<a class="headerlink" href="#import-options" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="mayafbx.FbxImportOptions">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">FbxImportOptions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.FbxImportOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper of <code class="docutils literal notranslate"><span class="pre">"FBXProperty</span> <span class="pre">Import|..."</span></code> and <code class="docutils literal notranslate"><span class="pre">"FBXImport..."</span></code> mel
+commands.</p>
+<p>Options can be get and set as properties or items:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="n">FbxImportOptions</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">hard_edges</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="p">[</span><span class="s1">'hard_edges'</span><span class="p">]</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="p">[</span><span class="s2">"hard_edges"</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">hard_edges</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>Can be initialized with kwargs:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="n">FbxImportOptions</span><span class="p">(</span><span class="n">hard_edges</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">hard_edges</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="n">FbxImportOptions</span><span class="p">(</span><span class="n">hard_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">options</span><span class="o">.</span><span class="n">hard_edges</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Can be used as a context manager:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">FbxImportOptions</span><span class="p">(</span><span class="n">hard_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">FbxImportOptions</span><span class="o">.</span><span class="n">from_scene</span><span class="p">()</span><span class="o">.</span><span class="n">hard_edges</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">FbxImportOptions</span><span class="p">(</span><span class="n">hard_edges</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">options</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">FbxImportOptions</span><span class="o">.</span><span class="n">from_scene</span><span class="p">()</span><span class="o">.</span><span class="n">hard_edges</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">FbxImportOptions</span><span class="o">.</span><span class="n">from_scene</span><span class="p">()</span><span class="o">.</span><span class="n">hard_edges</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py method">
+<dt id="mayafbx.FbxImportOptions.from_scene">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">from_scene</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.FbxImportOptions.from_scene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new instance initialized from scene options.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="mayafbx.FbxImportOptions.apply">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">apply</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.FbxImportOptions.apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply options in this instance to the scene.</p>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.merge_mode">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">merge_mode</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.merge_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>How to import the content of your file into the host application.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.MergeMode.kMerge" title="mayafbx.MergeMode.kMerge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MergeMode.kMerge</span></code></a>.
+See <a class="reference internal" href="#mayafbx.MergeMode" title="mayafbx.MergeMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MergeMode</span></code></a> for the list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<div class="section" id="id1">
+<h3>Geometry<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.unlock_normals">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">unlock_normals</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.unlock_normals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recomputes the normals on the objects using Maya internal
+algorithms.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Normals are automatically unlocked for all deformed geometry imported
+into Maya.</p></li>
+<li><p>Locked normals can create shading issues for geometry if a deformer is
+applied after import. Unlocking geometry normals resolves this.</p></li>
+</ul>
+</div>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.hard_edges">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">hard_edges</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.hard_edges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combine geometry vertex Normals.</p>
+<p>Merges back all vertices located at the same exact position as a unique
+vertex. The Maya FBX plug-in then determines if the edges connected to each
+vertex are hard edges or smooth edges, based on their normals.</p>
+<p>Use this when <a class="reference internal" href="#mayafbx.FbxExportOptions.hard_edges" title="mayafbx.FbxExportOptions.hard_edges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.hard_edges</span></code></a> was set to <em>True</em> on export.</p>
+<p>Default to <em>False</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using this option permanently alters any UV maps applied to geometry.
+The plug-in properly re-assigns the UVs to the newly split geometry.</p>
+<p>There is a limitation in regards to UVs, when importing this geometry
+into an empty Maya scene, as it may result in incorrect UV assignments.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.blind_data">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">blind_data</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.blind_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import Blind Data stored on polygons.</p>
+<p>Blind data is information stored with polygons which is not used by Maya,
+but might be useful to the platform to which you export to.</p>
+<p>Default to <em>True</em>.
+See <a class="reference internal" href="#mayafbx.FbxExportOptions.blind_data" title="mayafbx.FbxExportOptions.blind_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.blind_data</span></code></a> for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.remove_bad_polys">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">remove_bad_polys</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.remove_bad_polys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove degenerate polygons, such as two-sided polygons, single
+vertex polygons, and so on, from the mesh objects.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Animation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.animation">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">animation</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.animation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import animation.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.bake_animation_layers">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">bake_animation_layers</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.bake_animation_layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bake (plot) animation layers contained in the incoming file.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.optical_markers">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">optical_markers</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.optical_markers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import optical markers contained in the file as dummy objects.</p>
+<p>If set to <em>False</em>, the import process ignores this data.</p>
+<p>Optical markers normally come from motion capture data, as a cloud of
+animated points or markers.</p>
+<p>Default to <em>False</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your optical data originates from MotionBuilder, you can set the
+state of all optical markers to <code class="docutils literal notranslate"><span class="pre">Done</span></code> in MotionBuilder which lets you
+import the animation data as curves in Maya.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.quaternion_interpolation">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">quaternion_interpolation</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.quaternion_interpolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert and resample quaternion interpolation into Euler curves.</p>
+<p>Compensates differences between Maya and MotionBuilder quaternions.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.QuaternionInterpolation.kResampleAsEuler" title="mayafbx.QuaternionInterpolation.kResampleAsEuler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuaternionInterpolation.kResampleAsEuler</span></code></a>.
+See <a class="reference internal" href="#mayafbx.QuaternionInterpolation" title="mayafbx.QuaternionInterpolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuaternionInterpolation</span></code></a> for a list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.protect_driven_keys">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">protect_driven_keys</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.protect_driven_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prevent any incoming animation from overwriting channels with
+driven keys.</p>
+<ul class="simple">
+<li><p>If set to <em>True</em>, the driven keys are protected and no incoming animation
+is applied to the driven channels.</p></li>
+<li><p>If set to <em>False</em>, the driven keys are discarded and the incoming
+animation is applied to the driven channels.</p></li>
+</ul>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.deforming_elements_to_joint">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">deforming_elements_to_joint</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.deforming_elements_to_joint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert deforming elements into Maya joints.</p>
+<p>If set to <em>False</em>, elements other than joints being used to deform are
+converted to locators.</p>
+<p>Default to <em>True</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option was originally provided because Maya did not support locator
+elements (transform nodes that are not joints) within a bone hierarchy.</p>
+<p>While Maya now supports this, in some cases this option improves the
+skinning behavior.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.deformation">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">deformation</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.deformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import Skin and Blend Shape deformations.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.deformation_skins">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">deformation_skins</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.deformation_skins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import Skinning.</p>
+<p>Default to <em>True</em>. Only evaluated if <a class="reference internal" href="#mayafbx.FbxImportOptions.deformation" title="mayafbx.FbxImportOptions.deformation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.deformation_shapes">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">deformation_shapes</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.deformation_shapes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import Blend Shapes.</p>
+<p>Default to <em>True</em>. Only evaluated if <a class="reference internal" href="#mayafbx.FbxImportOptions.deformation" title="mayafbx.FbxImportOptions.deformation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.deformation_normalize_weights">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">deformation_normalize_weights</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.deformation_normalize_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize weight assignment.</p>
+<p>Pre-Normalize weights to ensure that every vertex on a skinned mesh has a
+weight no less than a total of <code class="docutils literal notranslate"><span class="pre">1.0</span></code>.</p>
+<p>You can have many joints that influence a single vertex, however, the
+percentage of each deforming joint always equals a sum total of <code class="docutils literal notranslate"><span class="pre">1.0</span></code>.</p>
+<p>Default to <em>False</em>. Only evaluated if <a class="reference internal" href="#mayafbx.FbxImportOptions.deformation" title="mayafbx.FbxImportOptions.deformation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deformation</span></code></a> is <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.sampling_rate">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">sampling_rate</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.sampling_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>The source used by the plugin to resample keyframes data.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.SamplingRate.kScene" title="mayafbx.SamplingRate.kScene"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SamplingRate.kScene</span></code></a>.
+See <a class="reference internal" href="#mayafbx.SamplingRate" title="mayafbx.SamplingRate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SamplingRate</span></code></a> for a list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.set_maya_framerate">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">set_maya_framerate</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.set_maya_framerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite Maya frame rate with incoming FBX frame rate.</p>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.keep_attributes_locked">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">keep_attributes_locked</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.keep_attributes_locked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlock channels in Maya that contain animation in incoming FBX.</p>
+<ul class="simple">
+<li><p>If <em>False</em>, unlocks all channels.</p></li>
+<li><p>If <em>True</em>, channels remain locked.</p></li>
+</ul>
+<p>Default to <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.custom_sampling_rate">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">custom_sampling_rate</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.custom_sampling_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Custom rate to resample keyframes data.</p>
+<p>Default to <em>30.0</em>.
+Only evaluated if <a class="reference internal" href="#mayafbx.FbxImportOptions.sampling_rate" title="mayafbx.FbxImportOptions.sampling_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sampling_rate</span></code></a> is set to <a class="reference internal" href="#mayafbx.SamplingRate.kCustom" title="mayafbx.SamplingRate.kCustom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SamplingRate.kCustom</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Include<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.constraints">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">constraints</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.constraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import supported constraints contained in the FBX file to Maya.</p>
+<dl class="simple">
+<dt>FBX support the following constraints:</dt><dd><ul class="simple">
+<li><p>Point</p></li>
+<li><p>Aim</p></li>
+<li><p>Orient</p></li>
+<li><p>Parent,</p></li>
+<li><p>IK handle (including Pole vector)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.skeleton_definition">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">skeleton_definition</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.skeleton_definition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the Skeleton definition to use on import.</p>
+<p>Useful if you are importing from MotionBuilder, which supports characters.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.SkeletonDefinition.kHumanIK" title="mayafbx.SkeletonDefinition.kHumanIK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SkeletonDefinition.kHumanIK</span></code></a>.
+See <a class="reference internal" href="#mayafbx.SkeletonDefinition" title="mayafbx.SkeletonDefinition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SkeletonDefinition</span></code></a> for the list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.cameras">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">cameras</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.cameras" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import cameras.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.lights">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">lights</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.lights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import lights.</p>
+<dl class="simple">
+<dt>FBX support the following lights:</dt><dd><ul class="simple">
+<li><p>Point</p></li>
+<li><p>Spot</p></li>
+<li><p>Directional</p></li>
+</ul>
+</dd>
+</dl>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.audio">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">audio</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import audio.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Advanced<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.automatic_units">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">automatic_units</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.automatic_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>Automatically identify and convert the units of the incoming file
+to match the units of the scene.</p>
+<p>Default to <em>True</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>This conversion affects only incoming data.</p></li>
+<li><p>This does not change the settings in Maya.</p></li>
+</ul>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.convert_units_to">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">convert_units_to</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.convert_units_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the units to which you want to convert the incoming data.</p>
+<p>Affects the Scale Factor value applied to the imported data.</p>
+<p>Default to the Maya System Units, as set in
+<code class="docutils literal notranslate"><span class="pre">Window</span> <span class="pre">&gt;</span> <span class="pre">Settings/Preferences</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Settings</span></code>.
+See <a class="reference internal" href="#mayafbx.ConvertUnit" title="mayafbx.ConvertUnit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvertUnit</span></code></a> for the list of possible values.</p>
+<p>Only evaluated if <a class="reference internal" href="#mayafbx.FbxImportOptions.automatic_units" title="mayafbx.FbxImportOptions.automatic_units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">automatic_units</span></code></a> is <em>False</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.axis_conversion">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">axis_conversion</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.axis_conversion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable axis conversion on import.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.up_axis">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">up_axis</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.up_axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Up axis conversion.</p>
+<p>Default to the the scene up axis, as set in
+<code class="docutils literal notranslate"><span class="pre">Window</span> <span class="pre">&gt;</span> <span class="pre">Settings/Preferences</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Settings</span></code>.
+See <a class="reference internal" href="#mayafbx.UpAxis" title="mayafbx.UpAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpAxis</span></code></a> for the list of possible values.</p>
+<p>Only evaluated if <a class="reference internal" href="#mayafbx.FbxImportOptions.axis_conversion" title="mayafbx.FbxImportOptions.axis_conversion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">axis_conversion</span></code></a> is <em>True</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only applies axis conversion to the root elements of the incoming
+scene. If you have animation on a root object that must be converted
+on import, these animation curves are resampled to apply the proper
+axis conversion.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.forced_file_axis">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">forced_file_axis</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.forced_file_axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Force” the FBX plug-in to consider the data in the file as if it is
+natively generated with the specifed axis.</p>
+<p>Default to <a class="reference internal" href="#mayafbx.ForcedFileAxis.kDisabled" title="mayafbx.ForcedFileAxis.kDisabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForcedFileAxis.kDisabled</span></code></a>.
+See <a class="reference internal" href="#mayafbx.ForcedFileAxis" title="mayafbx.ForcedFileAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForcedFileAxis</span></code></a> for the list of possible values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.show_warning_ui">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">show_warning_ui</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.show_warning_ui" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the Warning Manager dialog if something unexpected occurs
+during the import process.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FbxImportOptions.generate_log">
+<code class="sig-prename descclassname"><span class="pre">FbxImportOptions.</span></code><code class="sig-name descname"><span class="pre">generate_log</span></code><a class="headerlink" href="#mayafbx.FbxImportOptions.generate_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate log data.</p>
+<p>The Maya FBX plug-in stores log files with the FBX presets, in
+<code class="docutils literal notranslate"><span class="pre">C:\My</span> <span class="pre">Documents\Maya\FBX\Logs</span></code>.</p>
+<p>Default to <em>True</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils"/>
+<div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="mayafbx.QuaternionInterpolation">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">QuaternionInterpolation</span></code><a class="headerlink" href="#mayafbx.QuaternionInterpolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>How to handle quaternion interpolation on import/export.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxExportOptions.quaternion_interpolation" title="mayafbx.FbxExportOptions.quaternion_interpolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.quaternion_interpolation</span></code></a> and
+<a class="reference internal" href="#mayafbx.FbxImportOptions.quaternion_interpolation" title="mayafbx.FbxImportOptions.quaternion_interpolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxImportOptions.quaternion_interpolation</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.QuaternionInterpolation.kResampleAsEuler">
+<code class="sig-name descname"><span class="pre">kResampleAsEuler</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Resample</span> <span class="pre">As</span> <span class="pre">Euler</span> <span class="pre">Interpolation'</span></em><a class="headerlink" href="#mayafbx.QuaternionInterpolation.kResampleAsEuler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts and resamples quaternion interpolations into Euler curves.</p>
+<p>Use this option to obtain visual results identical to your animation in
+MotionBuilder or other applications.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.QuaternionInterpolation.kRetainQuaternion">
+<code class="sig-name descname"><span class="pre">kRetainQuaternion</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Retain</span> <span class="pre">Quaternion</span> <span class="pre">Interpolation'</span></em><a class="headerlink" href="#mayafbx.QuaternionInterpolation.kRetainQuaternion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retains quaternion interpolation types during the export process.</p>
+<p>Use this option when you export animation that has quaternion
+interpolations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>This option is only compatible with applications supporting this
+interpolation type, such as Autodesk MotionBuilder.</p></li>
+<li><p>Also note that the resulting animation will not be identical since
+quaternion evaluations are different in Maya and MotionBuilder.</p></li>
+</ul>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.QuaternionInterpolation.kSetAsEuler">
+<code class="sig-name descname"><span class="pre">kSetAsEuler</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Set</span> <span class="pre">As</span> <span class="pre">Euler</span> <span class="pre">Interpolation'</span></em><a class="headerlink" href="#mayafbx.QuaternionInterpolation.kSetAsEuler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the interpolation type of quaternion keys to a Euler type,
+without resampling the animation curves themselves.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Using this option results in the same number of keys, set as Euler
+types.</p></li>
+<li><p>The visual result will be different since it is now   evaluated as a
+Euler interpolation.</p></li>
+</ul>
+</div>
+</dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.ConvertUnit">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">ConvertUnit</span></code><a class="headerlink" href="#mayafbx.ConvertUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supported units, change the scale factor on import/export.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxExportOptions.convert_units_to" title="mayafbx.FbxExportOptions.convert_units_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.convert_units_to</span></code></a> and
+<a class="reference internal" href="#mayafbx.FbxImportOptions.convert_units_to" title="mayafbx.FbxImportOptions.convert_units_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxImportOptions.convert_units_to</span></code></a>.</p>
+<dl class="py method">
+<dt id="mayafbx.ConvertUnit.current">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">current</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.ConvertUnit.current" title="Permalink to this definition">¶</a></dt>
+<dd><p>str: Current Maya unit, as set in
+<code class="docutils literal notranslate"><span class="pre">Window</span> <span class="pre">&gt;</span> <span class="pre">Settings/Preferences</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Settings</span></code>.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kCentimeters">
+<code class="sig-name descname"><span class="pre">kCentimeters</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'cm'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kCentimeters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kDecimeters">
+<code class="sig-name descname"><span class="pre">kDecimeters</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'dm'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kDecimeters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kFeet">
+<code class="sig-name descname"><span class="pre">kFeet</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'ft'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kFeet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kInches">
+<code class="sig-name descname"><span class="pre">kInches</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'In'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kInches" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kKilometers">
+<code class="sig-name descname"><span class="pre">kKilometers</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'km'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kKilometers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kMeters">
+<code class="sig-name descname"><span class="pre">kMeters</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'m'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kMeters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kMiles">
+<code class="sig-name descname"><span class="pre">kMiles</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'mi'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kMiles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kMillimeters">
+<code class="sig-name descname"><span class="pre">kMillimeters</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'mm'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kMillimeters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ConvertUnit.kYards">
+<code class="sig-name descname"><span class="pre">kYards</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'yd'</span></em><a class="headerlink" href="#mayafbx.ConvertUnit.kYards" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.UpAxis">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">UpAxis</span></code><a class="headerlink" href="#mayafbx.UpAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supported up axis conversions.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxExportOptions.up_axis" title="mayafbx.FbxExportOptions.up_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.up_axis</span></code></a> and <a class="reference internal" href="#mayafbx.FbxImportOptions.up_axis" title="mayafbx.FbxImportOptions.up_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxImportOptions.up_axis</span></code></a>.</p>
+<dl class="py method">
+<dt id="mayafbx.UpAxis.current">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">current</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.UpAxis.current" title="Permalink to this definition">¶</a></dt>
+<dd><p>str: Scene up axis.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.UpAxis.kY">
+<code class="sig-name descname"><span class="pre">kY</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Y'</span></em><a class="headerlink" href="#mayafbx.UpAxis.kY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.UpAxis.kZ">
+<code class="sig-name descname"><span class="pre">kZ</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Z'</span></em><a class="headerlink" href="#mayafbx.UpAxis.kZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.ForcedFileAxis">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">ForcedFileAxis</span></code><a class="headerlink" href="#mayafbx.ForcedFileAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supported policies for incoming file axis.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxImportOptions.forced_file_axis" title="mayafbx.FbxImportOptions.forced_file_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxImportOptions.forced_file_axis</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.ForcedFileAxis.kDisabled">
+<code class="sig-name descname"><span class="pre">kDisabled</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'disabled'</span></em><a class="headerlink" href="#mayafbx.ForcedFileAxis.kDisabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ForcedFileAxis.kY">
+<code class="sig-name descname"><span class="pre">kY</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'y'</span></em><a class="headerlink" href="#mayafbx.ForcedFileAxis.kY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.ForcedFileAxis.kZ">
+<code class="sig-name descname"><span class="pre">kZ</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'z'</span></em><a class="headerlink" href="#mayafbx.ForcedFileAxis.kZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.AxisConversionMethod">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">AxisConversionMethod</span></code><a class="headerlink" href="#mayafbx.AxisConversionMethod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supported axis conversions methods.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxExportOptions.axis_conversion_method" title="mayafbx.FbxExportOptions.axis_conversion_method"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.axis_conversion_method</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.AxisConversionMethod.kAddRoot">
+<code class="sig-name descname"><span class="pre">kAddRoot</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'addFbxRoot'</span></em><a class="headerlink" href="#mayafbx.AxisConversionMethod.kAddRoot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a transformation node to the top of the scene to contain the
+transformations needed to transport the data into the new World system.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the plug-in does not detect a need for the conversion, no Fbx_Root
+node is added.</p>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.AxisConversionMethod.kConvertAnimation">
+<code class="sig-name descname"><span class="pre">kConvertAnimation</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'convertAnimation'</span></em><a class="headerlink" href="#mayafbx.AxisConversionMethod.kConvertAnimation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recalculates all animation FCurves so their values reflect the new World
+system.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.AxisConversionMethod.kNone">
+<code class="sig-name descname"><span class="pre">kNone</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'none'</span></em><a class="headerlink" href="#mayafbx.AxisConversionMethod.kNone" title="Permalink to this definition">¶</a></dt>
+<dd><p>No conversion takes place and the exported data is unaffected.</p>
+</dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.NurbsSurfaceAs">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">NurbsSurfaceAs</span></code><a class="headerlink" href="#mayafbx.NurbsSurfaceAs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supported nurbs surfaces conversions on export.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxExportOptions.convert_nurbs_surface_as" title="mayafbx.FbxExportOptions.convert_nurbs_surface_as"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.convert_nurbs_surface_as</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.NurbsSurfaceAs.kInteractiveDisplayMesh">
+<code class="sig-name descname"><span class="pre">kInteractiveDisplayMesh</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Interactive</span> <span class="pre">Display</span> <span class="pre">Mesh'</span></em><a class="headerlink" href="#mayafbx.NurbsSurfaceAs.kInteractiveDisplayMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts geometry based on the NURBS display settings.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.NurbsSurfaceAs.kNurbs">
+<code class="sig-name descname"><span class="pre">kNurbs</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'NURBS'</span></em><a class="headerlink" href="#mayafbx.NurbsSurfaceAs.kNurbs" title="Permalink to this definition">¶</a></dt>
+<dd><p>No conversion applied, export NURBS geometry as is.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.NurbsSurfaceAs.kSoftwareRenderMesh">
+<code class="sig-name descname"><span class="pre">kSoftwareRenderMesh</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Software</span> <span class="pre">Render</span> <span class="pre">Mesh'</span></em><a class="headerlink" href="#mayafbx.NurbsSurfaceAs.kSoftwareRenderMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts geometry based on the NURBS render settings.</p>
+</dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.FileFormat">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">FileFormat</span></code><a class="headerlink" href="#mayafbx.FileFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supported export file formats.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxExportOptions.file_format" title="mayafbx.FbxExportOptions.file_format"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.file_format</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.FileFormat.kAscii">
+<code class="sig-name descname"><span class="pre">kAscii</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'ASCII'</span></em><a class="headerlink" href="#mayafbx.FileFormat.kAscii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plain text format.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileFormat.kBinary">
+<code class="sig-name descname"><span class="pre">kBinary</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Binary'</span></em><a class="headerlink" href="#mayafbx.FileFormat.kBinary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Standard format.</p>
+</dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.FileVersion">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">FileVersion</span></code><a class="headerlink" href="#mayafbx.FileVersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supported file version.</p>
+<p>If you are using this package on Maya &gt; 2020, the latest version might be
+missing from this enum. You can still set the value as a string if
+necessary.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxExportOptions.file_version" title="mayafbx.FbxExportOptions.file_version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxExportOptions.file_version</span></code></a>.</p>
+<dl class="py method">
+<dt id="mayafbx.FileVersion.current">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">current</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mayafbx.FileVersion.current" title="Permalink to this definition">¶</a></dt>
+<dd><p>str: Export version currently used by the plugin.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2006">
+<code class="sig-name descname"><span class="pre">k2006</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX200611'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2006" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2009">
+<code class="sig-name descname"><span class="pre">k2009</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX200900'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2009" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2010">
+<code class="sig-name descname"><span class="pre">k2010</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201000'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2010" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2011">
+<code class="sig-name descname"><span class="pre">k2011</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201100'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2011" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2012">
+<code class="sig-name descname"><span class="pre">k2012</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201200'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2012" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2013">
+<code class="sig-name descname"><span class="pre">k2013</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201300'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2013" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2014">
+<code class="sig-name descname"><span class="pre">k2014</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201400'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2014" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2016">
+<code class="sig-name descname"><span class="pre">k2016</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201600'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2016" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2018">
+<code class="sig-name descname"><span class="pre">k2018</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201800'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2018" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2019">
+<code class="sig-name descname"><span class="pre">k2019</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX201900'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2019" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.FileVersion.k2020">
+<code class="sig-name descname"><span class="pre">k2020</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FBX202000'</span></em><a class="headerlink" href="#mayafbx.FileVersion.k2020" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.SkeletonDefinition">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">SkeletonDefinition</span></code><a class="headerlink" href="#mayafbx.SkeletonDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Skeleton definition that can be used on import.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxImportOptions.skeleton_definition" title="mayafbx.FbxImportOptions.skeleton_definition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxImportOptions.skeleton_definition</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.SkeletonDefinition.kHumanIK">
+<code class="sig-name descname"><span class="pre">kHumanIK</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'HumanIK'</span></em><a class="headerlink" href="#mayafbx.SkeletonDefinition.kHumanIK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.SkeletonDefinition.kNone">
+<code class="sig-name descname"><span class="pre">kNone</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'None'</span></em><a class="headerlink" href="#mayafbx.SkeletonDefinition.kNone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.MergeMode">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">MergeMode</span></code><a class="headerlink" href="#mayafbx.MergeMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>How to process imported data.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxImportOptions.merge_mode" title="mayafbx.FbxImportOptions.merge_mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxImportOptions.merge_mode</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.MergeMode.kAdd">
+<code class="sig-name descname"><span class="pre">kAdd</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'add'</span></em><a class="headerlink" href="#mayafbx.MergeMode.kAdd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the content of the FBX file to your scene.</p>
+<ul class="simple">
+<li><p>Add non-existing elements to your scene.</p></li>
+<li><p>If elements exist in scene, they are duplicated.</p></li>
+</ul>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.MergeMode.kMerge">
+<code class="sig-name descname"><span class="pre">kMerge</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'merge'</span></em><a class="headerlink" href="#mayafbx.MergeMode.kMerge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds new content and updates animation from your file to matching objects
+in your scene.</p>
+<ul class="simple">
+<li><p>Any node without equivalent in the scene is created.</p></li>
+<li><p>Nodes with the same name but not of the same type are replaced.</p></li>
+<li><p>Nodes with the same name and type only have their animation replaced.</p></li>
+</ul>
+<p>If there is animation on any object in the FBX file and the object name is
+identical to an object in the destination application, that animation is
+replaced.</p>
+<p>If the object with the same name does not have animation, the new animation
+is added.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.MergeMode.kUpdateAnimation">
+<code class="sig-name descname"><span class="pre">kUpdateAnimation</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'exmerge'</span></em><a class="headerlink" href="#mayafbx.MergeMode.kUpdateAnimation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the content of the FBX file to your scene but only updates existing
+animation.</p>
+<ul class="simple">
+<li><p>Nodes of the same name and type have only their animation curve replaced.</p></li>
+<li><p>No new nodes are created, any objects in the file that are not already in
+the scene are ignored.</p></li>
+</ul>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.MergeMode.kUpdateAnimationPreserveUnkeyedTransform">
+<code class="sig-name descname"><span class="pre">kUpdateAnimationPreserveUnkeyedTransform</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'exmergekeyedxforms'</span></em><a class="headerlink" href="#mayafbx.MergeMode.kUpdateAnimationPreserveUnkeyedTransform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update animation but do not overwrite un-keyed transforms on existing
+scene elements.</p>
+<p>Only Keyed animation from the imported file updates the transforms on
+elements in scene.</p>
+</dd></dl>
+</dd></dl>
+<div class="line-block">
+<div class="line"><br/></div>
+</div>
+<dl class="py class">
+<dt id="mayafbx.SamplingRate">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">mayafbx.</span></code><code class="sig-name descname"><span class="pre">SamplingRate</span></code><a class="headerlink" href="#mayafbx.SamplingRate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sampling rate sources.</p>
+<p>Used in <a class="reference internal" href="#mayafbx.FbxImportOptions.sampling_rate" title="mayafbx.FbxImportOptions.sampling_rate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FbxImportOptions.sampling_rate</span></code></a>.</p>
+<dl class="py attribute">
+<dt id="mayafbx.SamplingRate.kCustom">
+<code class="sig-name descname"><span class="pre">kCustom</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Custom'</span></em><a class="headerlink" href="#mayafbx.SamplingRate.kCustom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use a custom value to resample animation.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.SamplingRate.kFile">
+<code class="sig-name descname"><span class="pre">kFile</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'File'</span></em><a class="headerlink" href="#mayafbx.SamplingRate.kFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the sampling rate defined by the FBX file to resample animation.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt id="mayafbx.SamplingRate.kScene">
+<code class="sig-name descname"><span class="pre">kScene</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'Scene'</span></em><a class="headerlink" href="#mayafbx.SamplingRate.kScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use scene current “working units” to resample animation.</p>
+</dd></dl>
+</dd></dl>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2021, Thibaud Gambier
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            |
+            <a class="muted-link" href="_sources/index.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">mayafbx</a></li>
+<li><a class="reference internal" href="#content">Content</a></li>
+<li><a class="reference internal" href="#export">Export</a><ul>
+<li><a class="reference internal" href="#export-options">Export Options</a><ul>
+<li><a class="reference internal" href="#geometry">Geometry</a></li>
+<li><a class="reference internal" href="#animation">Animation</a></li>
+<li><a class="reference internal" href="#include">Include</a></li>
+<li><a class="reference internal" href="#selection">Selection</a></li>
+<li><a class="reference internal" href="#advanced">Advanced</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#import">Import</a><ul>
+<li><a class="reference internal" href="#import-options">Import Options</a><ul>
+<li><a class="reference internal" href="#id1">Geometry</a></li>
+<li><a class="reference internal" href="#id2">Animation</a></li>
+<li><a class="reference internal" href="#id3">Include</a></li>
+<li><a class="reference internal" href="#id4">Advanced</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#enums">Enums</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>
